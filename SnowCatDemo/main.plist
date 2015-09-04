@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Node</key>
+	<dict>
+		<key>window</key>
+		<dict>
+			<key>backgroundColor</key>
+			<string>{255, 255, 0, 1}</string>
+			<key>rootViewController</key>
+			<dict>
+				<key>childViewControllers</key>
+				<array>
+					<dict>
+						<key>viewControllers</key>
+						<array>
+							<string> include file=&quot;page1.plist&quot;</string>
+							<string> include file=&quot;page2.plist&quot;</string>
+						</array>
+						<key>Class</key>
+						<string>TabBarController</string>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

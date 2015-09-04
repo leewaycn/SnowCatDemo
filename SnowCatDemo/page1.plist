@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Node</key>
+	<dict>
+		<key>title</key>
+		<string>提示</string>
+		<key>Class</key>
+		<string>ViewController</string>
+		<key>view</key>
+		<dict>
+			<key>subviews</key>
+			<array>
+				<string>include file=&quot;bt1.plist&quot;</string>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

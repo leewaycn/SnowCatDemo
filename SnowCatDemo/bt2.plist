@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Node</key>
+	<dict>
+		<key>color</key>
+		<string>{255, 241, 0, 1}</string>
+		<key>Class</key>
+		<string>Button</string>
+		<key>title</key>
+		<string>Click me</string>
+		<key>center</key>
+		<string>{parent.width * 0.5, parent.height * 0.5}</string>
+		<key>events</key>
+		<dict>
+			<key>onClick</key>
+			<array>
+				<dict>
+					<key>message</key>
+					<string>messsssage1</string>
+					<key>title</key>
+					<string>title1</string>
+					<key>name</key>
+					<string>Alert</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

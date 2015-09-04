@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import "SnowCat.h"
+#import "SlanissueToolkit.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +19,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    
+    NSString * path = [SCApplicationDirectory() stringByAppendingPathComponent:@"main.plist"];
+    SCNodeFileParser * parser = [SCNodeFileParser parser:path];
+    NSDictionary * dict = [parser node];
+    
+    if ([dict objectForKey:@"window"]) {
+        dict = [dict objectForKey:@"window"];
+    }
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    
+    self.window.backgroundColor= [UIColor whiteColor];
+    
+    [SCWindow apply:dict withWindow:self.window];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
